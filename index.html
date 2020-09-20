@@ -9,11 +9,21 @@
 		img{
 			max-width: 100%;
 			vertical-align: top;
+			/*display: none;*/
+		}
+		img#responsive{
+			display: none;
+		}
+		@media screen and (max-width: 768px ){
+			img#responsive{
+				display: block;
+			}
 		}
 	</style>
 
 </head>
 <body>
+	<img src="sitio-web.jpg" id="responsive">
 	<img src="consola.jpg">
 	<img src="neuronas.jpg">
 	<img src="paisaje.png">
